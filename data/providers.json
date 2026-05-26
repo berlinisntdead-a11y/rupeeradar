@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Wise",
+    "fee_flat": 0.5,
+    "fee_percent": 0.5,
+    "exchange_rate": 90.5,
+    "delivery_speed": "Instant – 2 hrs",
+    "min_amount": 1,
+    "website_url": "https://wise.com"
+  },
+  {
+    "name": "Revolut",
+    "fee_flat": 0,
+    "fee_percent": 0.5,
+    "exchange_rate": 90.1,
+    "delivery_speed": "1 – 2 days",
+    "min_amount": 5,
+    "website_url": "https://revolut.com"
+  },
+  {
+    "name": "Instarem",
+    "fee_flat": 1.0,
+    "fee_percent": 0.5,
+    "exchange_rate": 90.0,
+    "delivery_speed": "Same day – 1 day",
+    "min_amount": 10,
+    "website_url": "https://instarem.com"
+  },
+  {
+    "name": "Remitly",
+    "fee_flat": 0,
+    "fee_percent": 1.5,
+    "exchange_rate": 89.5,
+    "delivery_speed": "Minutes – 5 days",
+    "min_amount": 10,
+    "website_url": "https://remitly.com"
+  },
+  {
+    "name": "Western Union",
+    "fee_flat": 3.9,
+    "fee_percent": 1.0,
+    "exchange_rate": 88.8,
+    "delivery_speed": "Minutes – 2 days",
+    "min_amount": 1,
+    "website_url": "https://westernunion.com"
+  }
+]
