@@ -30,7 +30,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 py-5 flex items-center gap-3">
-          <span className="text-2xl font-bold text-orange-500">RupeeRadar</span>
+          <span className="text-2xl font-bold text-green-600">RupeeRadar</span>
           <span className="text-sm text-gray-500 hidden sm:inline">Best EUR → INR transfer rates</span>
         </div>
       </header>
@@ -70,7 +70,7 @@ export default function Home() {
                 onClick={() => setAmount(preset)}
                 className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                   amount === preset
-                    ? 'bg-orange-500 text-white'
+                    ? 'bg-green-600 text-white'
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
@@ -82,7 +82,7 @@ export default function Home() {
 
         {/* Savings callout */}
         {results.length > 1 && (
-          <div className="bg-orange-50 border border-orange-200 rounded-xl px-4 py-3 mb-4 text-sm text-orange-800 flex items-center gap-2">
+          <div className="bg-green-50 border border-green-200 rounded-xl px-4 py-3 mb-4 text-sm text-green-800 flex items-center gap-2">
             <span className="text-lg">💡</span>
             <span>
               Best provider saves you{' '}
@@ -123,14 +123,14 @@ export default function Home() {
                 return (
                   <tr
                     key={r.name}
-                    className={isBest ? 'bg-orange-50' : 'hover:bg-gray-50 transition-colors'}
+                    className={isBest ? 'bg-green-50' : 'hover:bg-gray-50 transition-colors'}
                   >
                     {/* Provider name + badges + notes */}
                     <td className="px-5 py-3.5">
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="font-semibold text-gray-900">{r.name}</span>
                         {isBest && (
-                          <span className="bg-orange-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                          <span className="bg-green-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">
                             Best Value
                           </span>
                         )}
@@ -160,7 +160,7 @@ export default function Home() {
                     </td>
 
                     {/* Amount received */}
-                    <td className={`px-5 py-3.5 text-right font-bold align-top ${isBest ? 'text-orange-600' : 'text-gray-900'}`}>
+                    <td className={`px-5 py-3.5 text-right font-bold align-top ${isBest ? 'text-green-600' : 'text-gray-900'}`}>
                       ₹{r.amountReceived.toLocaleString('en-IN', { maximumFractionDigits: 0 })}
                     </td>
 
@@ -175,7 +175,7 @@ export default function Home() {
                         href={r.website_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap"
+                        className="inline-block bg-green-600 hover:bg-green-700 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap"
                       >
                         Send →
                       </a>
@@ -196,7 +196,7 @@ export default function Home() {
               <div
                 key={r.name}
                 className={`rounded-2xl border p-4 ${
-                  isBest ? 'bg-orange-50 border-orange-200' : 'bg-white border-gray-200'
+                  isBest ? 'bg-green-50 border-green-200' : 'bg-white border-gray-200'
                 }`}
               >
                 <div className="flex items-start justify-between mb-2 gap-2">
@@ -204,7 +204,7 @@ export default function Home() {
                     <div className="flex items-center gap-1.5 flex-wrap">
                       <span className="font-bold text-gray-900">{r.name}</span>
                       {isBest && (
-                        <span className="bg-orange-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                        <span className="bg-green-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">
                           Best Value
                         </span>
                       )}
@@ -222,14 +222,14 @@ export default function Home() {
                     href={r.website_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="shrink-0 bg-orange-500 hover:bg-orange-600 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
+                    className="shrink-0 bg-green-600 hover:bg-green-700 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
                   >
                     Send →
                   </a>
                 </div>
                 <div className="grid grid-cols-2 gap-y-1 text-sm mt-3">
                   <span className="text-gray-500">Recipient gets</span>
-                  <span className={`text-right font-bold ${isBest ? 'text-orange-600' : 'text-gray-900'}`}>
+                  <span className={`text-right font-bold ${isBest ? 'text-green-600' : 'text-gray-900'}`}>
                     ₹{r.amountReceived.toLocaleString('en-IN', { maximumFractionDigits: 0 })}
                   </span>
                   <span className="text-gray-500">Fee</span>
