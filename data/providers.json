@@ -1,47 +1,156 @@
 [
   {
-    "name": "Wise",
-    "fee_flat": 0.5,
-    "fee_percent": 0.5,
-    "exchange_rate": 90.5,
-    "delivery_speed": "Instant – 2 hrs",
+    "name": "Revolut",
+    "type": "fintech",
+    "fee_flat": 0,
+    "fee_percent": 0,
+    "exchange_rate": 110.77,
+    "delivery_speed": "Instant – 1 day",
     "min_amount": 1,
-    "website_url": "https://wise.com"
+    "website_url": "https://revolut.com/transfer",
+    "notes": "Standard plan, weekdays only at this rate. Weekend surcharge of 0.5–1% applies."
   },
   {
-    "name": "Revolut",
+    "name": "Wise",
+    "type": "fintech",
+    "fee_flat": 0.50,
+    "fee_percent": 0.45,
+    "exchange_rate": 111.20,
+    "delivery_speed": "Instant – 2 hrs",
+    "min_amount": 1,
+    "website_url": "https://wise.com/send-money/eur-to-inr",
+    "notes": "Uses mid-market rate. Fee varies slightly by payment method."
+  },
+  {
+    "name": "Atlantic Money",
+    "type": "fintech",
+    "fee_flat": 3.00,
+    "fee_percent": 0,
+    "exchange_rate": 111.10,
+    "delivery_speed": "1 – 3 days",
+    "min_amount": 10,
+    "website_url": "https://atlantic.money",
+    "notes": "Flat €3 fee regardless of amount. Best value for transfers over €500."
+  },
+  {
+    "name": "Xe",
+    "type": "fintech",
     "fee_flat": 0,
     "fee_percent": 0.5,
-    "exchange_rate": 90.1,
+    "exchange_rate": 110.80,
+    "delivery_speed": "1 – 3 days",
+    "min_amount": 150,
+    "website_url": "https://xe.com/send-money",
+    "notes": "No flat fee. Particularly competitive for large transfers (€2,000+)."
+  },
+  {
+    "name": "HDFC QuickRemit",
+    "type": "nri_bank",
+    "fee_flat": 0,
+    "fee_percent": 0,
+    "exchange_rate": 110.10,
+    "delivery_speed": "Instant – 2 days",
+    "min_amount": 50,
+    "website_url": "https://www.quickremit.co.in",
+    "notes": "Instant to HDFC Bank accounts in India. 1–2 days to other banks."
+  },
+  {
+    "name": "ICICI Money2India",
+    "type": "nri_bank",
+    "fee_flat": 0,
+    "fee_percent": 0,
+    "exchange_rate": 109.90,
+    "delivery_speed": "30 mins – 2 days",
+    "min_amount": 100,
+    "website_url": "https://money2india.icici.bank.in",
+    "notes": "No transfer fee. 30-min delivery to ICICI Bank accounts. Available across EU."
+  },
+  {
+    "name": "TransferGo",
+    "type": "fintech",
+    "fee_flat": 1.99,
+    "fee_percent": 0,
+    "exchange_rate": 110.00,
+    "delivery_speed": "30 mins – 2 days",
+    "min_amount": 1,
+    "website_url": "https://transfergo.com",
+    "notes": "Popular with Indian diaspora in Netherlands, Germany and Italy."
+  },
+  {
+    "name": "WorldRemit",
+    "type": "fintech",
+    "fee_flat": 1.49,
+    "fee_percent": 0,
+    "exchange_rate": 109.80,
+    "delivery_speed": "Minutes – 2 days",
+    "min_amount": 1,
+    "website_url": "https://worldremit.com",
+    "notes": "Bank transfer and mobile wallet options available."
+  },
+  {
+    "name": "SBI Express Remit",
+    "type": "nri_bank",
+    "fee_flat": 0,
+    "fee_percent": 0,
+    "exchange_rate": 109.40,
     "delivery_speed": "1 – 2 days",
-    "min_amount": 5,
-    "website_url": "https://revolut.com"
+    "min_amount": 100,
+    "website_url": "https://sbigloballink.sbi.co.in",
+    "notes": "State Bank of India. Strong rural branch network across India."
   },
   {
     "name": "Instarem",
-    "fee_flat": 1.0,
+    "type": "fintech",
+    "fee_flat": 0.50,
     "fee_percent": 0.5,
-    "exchange_rate": 90.0,
+    "exchange_rate": 109.90,
     "delivery_speed": "Same day – 1 day",
     "min_amount": 10,
-    "website_url": "https://instarem.com"
+    "website_url": "https://instarem.com",
+    "notes": "Earn InstaPoints on transfers, redeemable against future fees."
   },
   {
     "name": "Remitly",
+    "type": "traditional",
     "fee_flat": 0,
-    "fee_percent": 1.5,
-    "exchange_rate": 89.5,
+    "fee_percent": 0,
+    "exchange_rate": 109.20,
     "delivery_speed": "Minutes – 5 days",
-    "min_amount": 10,
-    "website_url": "https://remitly.com"
+    "min_amount": 1,
+    "website_url": "https://remitly.com",
+    "notes": "Economy rate shown. Express transfers are faster but cost more."
+  },
+  {
+    "name": "Xoom (PayPal)",
+    "type": "traditional",
+    "fee_flat": 2.99,
+    "fee_percent": 0,
+    "exchange_rate": 108.50,
+    "delivery_speed": "Minutes – 2 days",
+    "min_amount": 1,
+    "website_url": "https://xoom.com/india",
+    "notes": "Good option if you already use PayPal. Fee-free via bank debit."
+  },
+  {
+    "name": "Ria Money Transfer",
+    "type": "traditional",
+    "fee_flat": 2.99,
+    "fee_percent": 1.0,
+    "exchange_rate": 108.80,
+    "delivery_speed": "Minutes – 2 days",
+    "min_amount": 1,
+    "website_url": "https://riamoneytransfer.com",
+    "notes": "Large agent network. Good for cash pickup in India."
   },
   {
     "name": "Western Union",
-    "fee_flat": 3.9,
+    "type": "traditional",
+    "fee_flat": 3.90,
     "fee_percent": 1.0,
-    "exchange_rate": 88.8,
+    "exchange_rate": 107.90,
     "delivery_speed": "Minutes – 2 days",
     "min_amount": 1,
-    "website_url": "https://westernunion.com"
+    "website_url": "https://westernunion.com",
+    "notes": "Widest cash pickup network in India. Online rates are poor."
   }
 ]
