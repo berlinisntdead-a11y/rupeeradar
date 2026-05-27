@@ -110,6 +110,17 @@
     "notes": "Earn InstaPoints on transfers, redeemable against future fees."
   },
   {
+    "name": "Paysend",
+    "type": "fintech",
+    "fee_flat": 1.50,
+    "fee_percent": 0,
+    "exchange_rate": 109.70,
+    "delivery_speed": "Same day",
+    "min_amount": 1,
+    "website_url": "https://paysend.com",
+    "notes": "Flat €1.50 fee. Card-to-card transfers available."
+  },
+  {
     "name": "Remitly",
     "type": "traditional",
     "fee_flat": 0,
@@ -141,6 +152,17 @@
     "min_amount": 1,
     "website_url": "https://riamoneytransfer.com",
     "notes": "Large agent network. Good for cash pickup in India."
+  },
+  {
+    "name": "Skrill",
+    "type": "fintech",
+    "fee_flat": 0,
+    "fee_percent": 0,
+    "exchange_rate": 108.55,
+    "delivery_speed": "Instant – 2 days",
+    "min_amount": 1,
+    "website_url": "https://skrill.com",
+    "notes": "No explicit fee; up to 2.5% FX markup built into rate. Best for existing Skrill users."
   },
   {
     "name": "Western Union",
