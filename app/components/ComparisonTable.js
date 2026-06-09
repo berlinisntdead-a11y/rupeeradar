@@ -124,6 +124,11 @@ export default function ComparisonTable({ providers, midMarketRate, rateUpdatedA
                           {badge.label}
                         </span>
                       )}
+                      {r.verified && (
+                        <span className="text-xs font-medium text-emerald-600" title={`Rates verified ${r.last_verified}`}>
+                          ✓ Verified
+                        </span>
+                      )}
                     </div>
                     {r.notes && (
                       <p className="text-xs text-gray-400 mt-0.5 max-w-xs">{r.notes}</p>
@@ -195,6 +200,11 @@ export default function ComparisonTable({ providers, midMarketRate, rateUpdatedA
                     {badge && (
                       <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${badge.classes}`}>
                         {badge.label}
+                      </span>
+                    )}
+                    {r.verified && (
+                      <span className="text-xs font-medium text-emerald-600" title={`Rates verified ${r.last_verified}`}>
+                        ✓ Verified
                       </span>
                     )}
                   </div>

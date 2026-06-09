@@ -2,24 +2,28 @@
   {
     "name": "Wise",
     "type": "fintech",
-    "fee_flat": 0.50,
-    "fee_percent": 0.45,
+    "fee_flat": 0.49,
+    "fee_percent": 0.57,
     "rate_markup_percent": 0,
     "delivery_speed": "Instant – 2 hrs",
     "min_amount": 1,
     "website_url": "https://wise.com/send-money/eur-to-inr",
-    "notes": "Uses mid-market rate directly. Fee varies slightly by payment method."
+    "notes": "Mid-market rate. Fee: €0.49 flat + 0.57% of amount.",
+    "verified": true,
+    "last_verified": "2026-06-09"
   },
   {
     "name": "Revolut",
     "type": "fintech",
-    "fee_flat": 0,
+    "fee_flat": 0.90,
     "fee_percent": 0,
-    "rate_markup_percent": 0.50,
+    "rate_markup_percent": 0.45,
     "delivery_speed": "Instant – 1 day",
     "min_amount": 1,
     "website_url": "https://revolut.com/transfer",
-    "notes": "Standard plan, weekdays only at this rate. Weekend surcharge of 0.5–1% applies."
+    "notes": "€0.90 fee within the standard plan's free limit (€1,000/mo). Fees rise sharply above: €14.57 at €2k, €48.68 at €5k. Weekend surcharge also applies.",
+    "verified": true,
+    "last_verified": "2026-06-09"
   },
   {
     "name": "Atlantic Money",
@@ -136,11 +140,13 @@
     "type": "fintech",
     "fee_flat": 0,
     "fee_percent": 0,
-    "rate_markup_percent": 2.50,
+    "rate_markup_percent": 0.60,
     "delivery_speed": "Instant – 2 days",
     "min_amount": 1,
     "website_url": "https://skrill.com",
-    "notes": "No explicit fee; ~2.5% FX markup built into rate. Best for existing Skrill users."
+    "notes": "No explicit fee. Consistent 0.60% FX markup across all amounts (€100–€5,000).",
+    "verified": true,
+    "last_verified": "2026-06-09"
   },
   {
     "name": "Xoom (PayPal)",
