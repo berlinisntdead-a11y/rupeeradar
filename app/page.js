@@ -8,26 +8,25 @@ const FALLBACK_RATE = 111.33
 
 async function getLiveMidMarketRate() {
   try {
-    const res = await fetch('https://api.wise.com/v1/rates?source=EUR&target=INR', {
+    const res = await fetch('https://api.frankfurter.dev/v1/latest?from=EUR&to=INR', {
       next: { revalidate: 300 },
     })
-    if (!res.ok) throw new Error(`Wise API responded ${res.status}`)
+    if (!res.ok) throw new Error(`Frankfurter API responded ${res.status}`)
     const data = await res.json()
-    const rate = data[0]?.rate
+    const rate = data?.rates?.INR
     if (!rate || isNaN(rate)) throw new Error('Invalid rate in response')
-    return { rate, live: true }
+    return { rate, date: data.date, live: true }
   } catch (err) {
-    console.warn('Wise rate fetch failed, using fallback:', err.message)
-    return { rate: FALLBACK_RATE, live: false }
+    console.warn('Rate fetch failed, using fallback:', err.message)
+    return { rate: FALLBACK_RATE, date: null, live: false }
   }
 }
 
 export default async function Home() {
-  const { rate: midMarketRate, live } = await getLiveMidMarketRate()
+  const { rate: midMarketRate, date: rateDate, live } = await getLiveMidMarketRate()
 
-  const now = new Date()
-  const rateUpdatedAt = live
-    ? `updated ${now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })} UTC`
+  const rateUpdatedAt = live && rateDate
+    ? `ECB rate · ${rateDate}`
     : 'using cached rate'
 
   return (
@@ -60,7 +59,7 @@ export default async function Home() {
 
         {/* Footer */}
         <p className="text-center text-xs text-gray-400 mt-6">
-          Mid-market rate sourced from Wise API. Provider markups are indicative — verify before sending.
+          Mid-market rate sourced from the European Central Bank (ECB). Provider markups are indicative — verify before sending.
         </p>
       </div>
     </main>

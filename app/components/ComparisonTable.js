@@ -28,7 +28,7 @@ export default function ComparisonTable({ providers, midMarketRate, rateUpdatedA
         <span className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 text-sm text-gray-600 shadow-sm">
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
           Mid-market: <strong>1 EUR = ₹{midMarketRate.toFixed(2)}</strong>
-          <span className="text-gray-400 text-xs">· via Wise API · {rateUpdatedAt}</span>
+          <span className="text-gray-400 text-xs">· {rateUpdatedAt}</span>
         </span>
       </div>
 
